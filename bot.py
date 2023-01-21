@@ -6,7 +6,6 @@ import random
 import requests
 import asyncio
 from discord import FFmpegOpusAudio
-from dotenv import load_dotenv, find_dotenv
 from time import *
 import datetime
 from io import BytesIO
@@ -39,13 +38,8 @@ ragechat = []
 mathsolverchannel = []
 problemsolverchannel = []
 
-load_dotenv(find_dotenv())
-MAORNG_TOKEN = os.getenv('MARONG_TOKEN')
-MARONG_SPOTIFY_TOKEN = os.getenv('MARONG_SPOTIFY_TOKEN')
-TIANXING_TOKEN = os.getenv('TIANXING_TOKEN')
-PUBG_TOKEN = os.getenv('PUBG_TOKEN')
-SPOTIFY_CLIENT = os.getenv('spotify_client')
-OWNTHINK_TOKEN = os.getenv('OWNTHINK_TOKEN')
+MARONG_TOKEN='OTYyMTQ1Nzk3MjA0NDc1OTQ0.G9hsYF.luMmkva7Gs-H36V7mnAp9oRTCd9ylMtvzoj9Sg'
+OWNTHINK_TOKEN='caa20d570a8948a29bd36bd663f50b84'
 FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5','options': '-vn',}
 YTDL_OPTIONS = {'format': 'bestaudio/best','extractaudio': True,'audioformat': 'mp3','outtmpl': '%(extractor)s-%(id)s-%(title)s.%(ext)s','restrictfilenames': True,'noplaylist': True,'nocheckcertificate': True,'ignoreerrors': False,'logtostderr': False,'quiet': True,'no_warnings': True,'default_search': 'auto','source_address': '0.0.0.0',}
 
@@ -184,12 +178,6 @@ async def pars(ctx,*,rest):
             await ctx.send(embed = discord.Embed(title = f"**Error 404. Video can't be access**",colour = discord.Colour.from_rgb(255,0,0)), delete_after = 4)
     else:
         await ctx.send(embed = discord.Embed(title = f"**Invalid.**",colour = discord.Colour.from_rgb(255,0,0)), delete_after = 4)
-
-@bot.command()
-async def pubg(ctx, player_id):
-    header = {"Authorization": "Bearer "+PUBG_TOKEN,"Accept": "application/vnd.api+json"}
-    response = requests.get(url=f"https://api.pubg.com/shards/steam/players?filter[playerNames]={player_id}",headers=header)
-    print(json.loads(response.text)[id])
 
 @bot.command()
 async def spotify(ctx,*,item):
@@ -394,4 +382,4 @@ async def skip(message,voice_client):
     await message.channel.send(content = "**Skipped**", delete_after = 5)
     await check(voice_client)
     
-bot.run(MAORNG_TOKEN)
+bot.run(MARONG_TOKEN)
