@@ -38,8 +38,8 @@ ragechat = []
 mathsolverchannel = []
 problemsolverchannel = []
 
-MARONG_TOKEN='OTYyMTQ1Nzk3MjA0NDc1OTQ0.G9hsYF.luMmkva7Gs-H36V7mnAp9oRTCd9ylMtvzoj9Sg'
-OWNTHINK_TOKEN='caa20d570a8948a29bd36bd663f50b84'
+MARONG_TOKEN='TOKEN'
+OWNTHINK_TOKEN='TOKEN'
 FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5','options': '-vn',}
 YTDL_OPTIONS = {'format': 'bestaudio/best','extractaudio': True,'audioformat': 'mp3','outtmpl': '%(extractor)s-%(id)s-%(title)s.%(ext)s','restrictfilenames': True,'noplaylist': True,'nocheckcertificate': True,'ignoreerrors': False,'logtostderr': False,'quiet': True,'no_warnings': True,'default_search': 'auto','source_address': '0.0.0.0',}
 
