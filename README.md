@@ -12,54 +12,54 @@ marongs discord bot
     
 
 # ** 自动设置：(仅管理员) **
-!setup
+    !setup
 ﹒自动设置💬｜﹒小助手和 🎶｜﹒公共点歌 频道
 
 
 
 # ** 解析抖音视频： **
-!pars !解析
+    !pars !解析
 ﹒输入抖音链接，支持解析图片/直播/视频，只要后缀内容包含链接就行(抖音平台老是傻逼鬼畜，所以有时候发生404其实是抖音平台的问题)
 
 
 # ** 火力全开：(真的是火力全开) **
-!ragersetup
+    !ragersetup
 ﹒建立嘴臭频道，让你体验一下暴力marong
 
 
 
 # ** 播放音乐： **
-!p !play !PLAY !P
+    !p !play !PLAY !P
 ﹒输入歌名/链接(如果点歌频道已存在，不需要加任何前缀，直接输入歌名/链接即可)
  ﹒Example: !play 周杰伦 晴天 !play youtube链接
  
 
 # ** 断开语音连接： **
-!d !disconnect !leave
+    !d !disconnect !leave
 ﹒断开语音连接/中断音乐
 
 
 
 # ** 下一首歌： **
-!skip
+    !skip
 ﹒播放下一首歌
 
 
 
 # ** 暂停/继续 **
-!pause/!resume
+    !pause/!resume
 ﹒暂停播放/继续播放(如果点歌频道已存在，直接点击▶即可)
 
 
 
 # ** 用户聊天历史记录 **
-!history
+    !history
 ﹒查询用户发送的历史信息，默认数值为前100条(已删除的信息也能被查询到)
 ﹒Example: !history @用户 200(要查询多少条信息)
 
 
 
 # ** 删除用户信息 **
-!clean !clear !purge
+    !clean !clear !purge
 ﹒删除用户的信息(默认数值为100条)
 ﹒Example: !purge @用户 200(要删除多少条信息)
